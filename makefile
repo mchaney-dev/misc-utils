@@ -1,0 +1,15 @@
+TARGET=
+COMPILER=
+DEPENDENCIES=
+EXECUTABLE=
+LIBS=
+DEBUG_FLAGS=
+
+make: $(TARGET) $(DEPENDENCIES)
+        $(COMPILER) $(TARGET) $(DEPENDENCIES) $(DEBUG_FLAGS) $(LIBS)
+
+run: $(EXECUTABLE)
+        ./$(EXECUTABLE)
+
+clean:
+	rm -rf *.o *.out *.exe $(EXECUTABLE)
